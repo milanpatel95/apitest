@@ -13,4 +13,6 @@ module.exports = function(app){
   app.route('/api/v1/all')
     .get(controller.getalldata);
 
+  app.route('/api/v1/delete')
+    .delete(controller.deletedata);
 };

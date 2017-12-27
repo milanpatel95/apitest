@@ -35,3 +35,11 @@ exports.getalldata = function(req,res){
     res.json(user);
   });
 };
+
+exports.deletedata = function(req,res){
+  User.findOneAndRemove({'uid':req.header('uid')},function(err){
+    if(err)
+      res.send(err);
+    res.json("User Deleted");
+  });
+};
