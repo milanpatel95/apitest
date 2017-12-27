@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 3000;
+var port = 8080;
 var bodyParser = require('body-parser');
 var routes = require('./api/routes/routes');
 var mongoose = require('mongoose');
