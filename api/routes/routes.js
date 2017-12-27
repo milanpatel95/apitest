@@ -10,4 +10,7 @@ module.exports = function(app){
   app.route('/api/v1/data')
     .get(controller.getdata);
 
+  app.route('/api/v1/all')
+    .get(controller.getalldata);
+
 };

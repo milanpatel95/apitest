@@ -4,7 +4,9 @@ var UserData = mongoose.Schema;
 var UserDataSchema = new UserData({
   uid:{
     type:String,
-    required:'UID neccessary'
+    required:'UID neccessary',
+    unique:true,
+    index:true
   },
   token:{
     type:String,

@@ -27,3 +27,11 @@ exports.getdata = function(req,res){
     res.json(user);
   });
 };
+
+exports.getalldata = function(req,res){
+  User.find({},function(err,user){
+    if(err)
+      res.send(err);
+    res.json(user);
+  });
+};
