@@ -8,7 +8,6 @@ var User = require('./api/model/model');
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/UserDb');
-
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
